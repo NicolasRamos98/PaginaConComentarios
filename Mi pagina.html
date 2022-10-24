@@ -10,7 +10,7 @@
         padding: 0;
         overflow: hidden;
         background-color: rgb(200, 63, 63);
-        position: -webkit-sticky; 
+       /*  position: -webkit-sticky; */
         position: sticky;
         top: 0;
     }
@@ -18,7 +18,9 @@
     li 
     {
         float: left;
+        display: inline;
     }
+
 
     li a 
     {
@@ -33,7 +35,10 @@
     {
         background-color: rgb(42, 26, 110);
     }
-
+    .active
+    {
+        float:right;
+    }
     
     </style> 
 </head>
@@ -42,15 +47,15 @@
 <body > <!-- style="background-color:rgb(194, 182, 228)" pone el fondo de un color-->
     <h1><center> Club Atletico San Lorenzo de Almagro </center> </h1>
    
-    <center>
+    
     <ul>
         <li><a href="#Inicio">Inicio</a></li>
         <li><a href="#Noticias">Noticias</a></li>
         <li><a href="#Jugadores">Jugadores</a></li>
         <li><a href="#OtrosDeportes">Otros Deportes </a></li>
-        <li style="float:right"><a class="active" href="#Nosotros">Nostros</a></li>
+        <li class="active" ><a href="#Nosotros">Nostros</a></li>
     </ul>
-    </center>
+   
 
     <p>
         <center>  <!-- el center es para centrar-->
@@ -84,7 +89,7 @@
             </a>
         </p>     
     </p>
-
+ 
 
 
 
